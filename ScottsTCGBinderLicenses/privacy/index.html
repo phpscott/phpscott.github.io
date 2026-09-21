@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="privacy-effective-date" content="September 20, 2026">
+  <meta name="privacy-last-updated" content="September 20, 2026">
+  <title>Privacy Policy — Scott’s TCG Binder</title>
+  <!--
+  This Privacy Policy must remain synchronized with the application's
+  actual data-handling practices. Changes to analytics, cloud synchronization,
+  network services, external APIs, user accounts, or personal-data handling
+  require a privacy review before release.
+
+  PRIVACY_POLICY_DATES
+  effective: September 20, 2026
+  updated: September 20, 2026
+
+  Public URL: https://phpscott.github.io/ScottsTCGBinderLicenses/privacy/
+  -->
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --text: #1c1915;
+      --muted: #5c564c;
+      --heading: #14110d;
+      --accent: #0b57d0;
+      --accent-visited: #5b3cc4;
+      --border: #d9d2c5;
+      --card: #fffdf8;
+      --focus: #0b57d0;
+      --shadow: 0 1px 2px rgba(28, 25, 21, 0.06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161412;
+        --text: #f3eee6;
+        --muted: #c2b8aa;
+        --heading: #fffaf3;
+        --accent: #8ab4ff;
+        --accent-visited: #c5b3ff;
+        --border: #3a342c;
+        --card: #221e1a;
+        --focus: #8ab4ff;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+    }
+    .skip-link {
+      position: absolute;
+      left: 0.75rem;
+      top: -3rem;
+      background: var(--card);
+      color: var(--accent);
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.4rem;
+      z-index: 10;
+    }
+    .skip-link:focus { top: 0.75rem; }
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3.5rem;
+    }
+    header.hero, footer.site-footer, nav.toc, .glance, section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.35rem;
+      margin: 0 0 1rem;
+    }
+    header.hero { padding: 1.6rem 1.4rem 1.4rem; }
+    .eyebrow {
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 0.4rem;
+    }
+    h1, h2, h3 {
+      color: var(--heading);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 2.15rem);
+      margin: 0 0 0.75rem;
+    }
+    h2 { font-size: 1.28rem; margin: 0 0 0.75rem; }
+    h3 { font-size: 1.05rem; margin: 1.1rem 0 0.45rem; }
+    p, ul, ol { margin: 0 0 0.85rem; }
+    ul, ol { padding-left: 1.25rem; }
+    li + li { margin-top: 0.28rem; }
+    .dates { color: var(--muted); margin: 0; }
+    .dates span { display: inline-block; margin-right: 1.25rem; }
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.14em;
+    }
+    a:visited { color: var(--accent-visited); }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, .skip-link:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+    nav.toc ol { margin: 0; columns: 1; }
+    @media (min-width: 640px) {
+      nav.toc ol { columns: 2; column-gap: 1.5rem; }
+    }
+    .glance ul { margin-bottom: 0; }
+    footer.site-footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer.site-footer p:last-child { margin-bottom: 0; }
+    @media (max-width: 520px) {
+      .page { padding: 1rem 0.8rem 2.5rem; }
+      header.hero, footer.site-footer, nav.toc, .glance, section {
+        padding: 1.1rem 1rem;
+        border-radius: 0.8rem;
+      }
+      .dates span { display: block; margin: 0 0 0.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="page">
+    <header class="hero">
+      <p class="eyebrow">Scott’s TCG Binder</p>
+      <h1>Privacy Policy</h1>
+      <p class="dates">
+        <span><strong>Effective Date:</strong> <time id="effective-date" datetime="2026-09-20">September 20, 2026</time></span>
+        <span><strong>Last Updated:</strong> <time id="last-updated" datetime="2026-09-20">September 20, 2026</time></span>
+      </p>
+    </header>
+
+    <main id="main">
+      <section id="introduction" aria-labelledby="introduction-title">
+        <h2 id="introduction-title">Introduction</h2>
+        <p>This Privacy Policy describes how <strong>Scott’s TCG Binder</strong> (also referred to as Bindovo) handles information. Scott’s TCG Binder is a local-first Pokémon trading-card collection application for Mac, iPhone, and iPad.</p>
+        <p>Scott’s TCG Binder does not require a Scott’s TCG Binder account. The application stores your collection primarily on your devices. Optional Apple iCloud features use your Apple Account. Optional catalog, artwork, pricing, and competitive-data features communicate with independent data providers.</p>
+        <p>This policy describes the current shipping application. It does not describe unfinished features.</p>
+      </section>
+
+      <nav class="toc" aria-labelledby="contents-title">
+        <h2 id="contents-title">Contents</h2>
+        <ol>
+          <li><a href="#glance">Privacy at a Glance</a></li>
+          <li><a href="#stored">Information Stored by Scott’s TCG Binder</a></li>
+          <li><a href="#collection">Collection and User-Created Information</a></li>
+          <li><a href="#camera">Camera, Photos, Scanning, and OCR</a></li>
+          <li><a href="#catalog">Card Catalog and Artwork</a></li>
+          <li><a href="#pricing">Pricing Information</a></li>
+          <li><a href="#icloud">iCloud and CloudKit Synchronization</a></li>
+          <li><a href="#local-network">Local Network Device Synchronization</a></li>
+          <li><a href="#backups">Backups and Restore</a></li>
+          <li><a href="#third-parties">Third-Party Services</a></li>
+          <li><a href="#analytics">Analytics, Advertising, and Tracking</a></li>
+          <li><a href="#diagnostics">Diagnostics and Crash Information</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#deletion">Your Data and Deletion</a></li>
+          <li><a href="#security">Data Security</a></li>
+          <li><a href="#children">Children’s Privacy</a></li>
+          <li><a href="#international">International Users</a></li>
+          <li><a href="#changes">Changes to This Privacy Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#trademarks">Pokémon and Third-Party Trademarks</a></li>
+        </ol>
+      </nav>
+
+      <section class="glance" id="glance" aria-labelledby="glance-title">
+        <h2 id="glance-title">1. Privacy at a Glance</h2>
+        <p>Scott’s TCG Binder is designed around a local-first privacy model.</p>
+        <ul>
+          <li>Your card collection is stored primarily on your devices.</li>
+          <li>We do not sell your personal information.</li>
+          <li>We do not display advertising.</li>
+          <li>We do not use your collection for behavioral advertising.</li>
+          <li>We do not use third-party advertising or behavioral analytics SDKs.</li>
+          <li>Camera and photo-library images are used on the device to identify trading cards.</li>
+          <li>Optional iCloud synchronization uses Apple’s CloudKit private database.</li>
+          <li>Mac, iPhone, and iPad devices can synchronize catalog or collection data over your local network after you approve the connection.</li>
+          <li>Catalog information, official card artwork, and pricing may be retrieved from third-party data providers.</li>
+          <li>Scott’s TCG Binder does not operate its own user-account service.</li>
+        </ul>
+      </section>
+
+      <section id="stored" aria-labelledby="stored-title">
+        <h2 id="stored-title">2. Information Stored by Scott’s TCG Binder</h2>
+        <p>The application stores information in the application’s sandbox on your device, typically in Application Support. The local database is a SQLite file. Images are stored in application-owned folders. Some preferences are stored in device-local settings.</p>
+        <p>Public catalog information and your personal collection information can exist in the same local database. Catalog records are not your personal information merely because they are stored on your device.</p>
+        <h3>Public catalog information</h3>
+        <p>The application can store Pokémon TCG catalog metadata such as series, sets, cards, variants, languages, rarities, gameplay information, and related reference data. This information comes from the configured catalog provider or from a catalog copy received from another one of your devices.</p>
+        <h3>Personal collection information</h3>
+        <p>The application can store information you create about your collection, including:</p>
+        <ul>
+          <li>owned cards and quantities</li>
+          <li>condition, grade, grading company, and certification number</li>
+          <li>language</li>
+          <li>storage locations, binder, page, and slot</li>
+          <li>favorites, for-trade flags, for-sale flags, and related notes</li>
+          <li>purchase price, purchase details, asking price, and estimated values you enter</li>
+          <li>wishlist items and tracked-set goals</li>
+          <li>saved battle decks and deck notes</li>
+          <li>collection activity history</li>
+          <li>scan history, OCR text extracted from card images, and recognition results</li>
+          <li>photographs you take or import of cards you own</li>
+          <li>condition-analysis photos and results</li>
+          <li>inventory-audit sessions</li>
+          <li>price snapshots and collection valuation snapshots stored for your use</li>
+        </ul>
+        <h3>Preferences and acknowledgements</h3>
+        <p>Certain application preferences and acknowledgements may be stored locally on your device. This includes your acceptance of the End User License Agreement. That acknowledgement stays on the device that accepted it. It is not stored in the collection database and is not synchronized through iCloud or local-network collection sync.</p>
+        <p>Optional eBay or PriceCharting credentials, if you enter them, are stored in the device Keychain. They are not placed in CloudKit or local-network collection sync.</p>
+        <p>This information remains on the device unless you use a feature that copies, synchronizes, exports, or backs it up.</p>
+      </section>
+
+      <section id="collection" aria-labelledby="collection-title">
+        <h2 id="collection-title">3. Collection and User-Created Information</h2>
+        <p>Your collection is yours. The application stores it so you can browse, search, value, and manage cards.</p>
+        <p>Collection information does not leave the device unless you:</p>
+        <ul>
+          <li>enable iCloud collection synchronization</li>
+          <li>synchronize with a trusted Mac, iPhone, or iPad on your local network</li>
+          <li>create a backup or export file</li>
+          <li>share a backup or export using the operating system share sheet or a location you choose</li>
+        </ul>
+        <p>Catalog providers used for card metadata, artwork, and pricing receive catalog identifiers and request metadata. They do not receive your notes, quantities, grades, storage locations, wishlist, or decks as part of ordinary catalog or pricing requests.</p>
+        <p>Saved decks are stored locally. If you enable iCloud collection synchronization or local-network collection synchronization, saved decks can be included with other personal collection information. Competitive tournament information that you refresh is public provider data stored locally for deck research; it is not your collection.</p>
+        <p>Scott’s TCG Binder can mark a card as available for trade. A full trade-history workbench that stores another person’s name, a trade location, or a completed trade log is not part of the current application, so this policy does not describe that kind of record.</p>
+        <p>You can create a local card record when a scan cannot be matched to the catalog. Those user-created cards stay on your devices. They can be copied over the local network to a trusted paired device. They are not synchronized through CloudKit.</p>
+      </section>
+
+      <section id="camera" aria-labelledby="camera-title">
+        <h2 id="camera-title">4. Camera, Photos, Scanning, and OCR</h2>
+        <p>Scott’s TCG Binder can identify a Pokémon trading card from a photograph.</p>
+        <h3>Camera and photo library</h3>
+        <p>If you grant permission, the application may:</p>
+        <ul>
+          <li>use the device camera to photograph a card</li>
+          <li>let you choose an existing image from your photo library</li>
+          <li>on Mac, import an image file you select</li>
+          <li>use a paired iPhone as a remote camera for a Mac on your local network</li>
+        </ul>
+        <p>The application may detect card edges, crop and correct perspective, and prepare a normalized image for recognition.</p>
+        <h3>On-device recognition</h3>
+        <p>Card recognition and optical character recognition run on your device. OCR uses Apple’s Vision framework locally on the device. Using that framework does not send the photograph to Apple merely because the framework is installed on the device.</p>
+        <p>Recognition may read printed card information such as name, collector number, printed set total, set code, HP, stage, attacks, weakness, resistance, regulation mark, illustrator, and similar text that appears on the card. That printed information is used to match the card against the local catalog. Printed trading-card text is not treated as personal information.</p>
+        <p>The application does not upload scan photographs to a remote recognition or OCR service. During matching, the application may download official catalog artwork so it can compare the local scan with reference images. That download is catalog artwork, not an upload of your photograph.</p>
+        <h3>Saved scan information</h3>
+        <p>Depending on your scan-image retention setting, the application may save original, cropped, and recognition images in application storage, together with OCR text and match results in the local database. You can choose to keep scan images always, only for confirmed cards, only for unidentified cards, or never.</p>
+        <p>Scan history, OCR results, and scan photographs stay on the device. They are not synchronized through CloudKit, and they are not included in local-network collection synchronization. They can be included in a backup you create if you choose to include images.</p>
+        <p>If you use the iPhone as a remote camera for a Mac, live preview frames and captured stills travel over your local network to that Mac using Apple’s Multipeer Connectivity. They are not sent to a Scott’s TCG Binder server.</p>
+      </section>
+
+      <section id="catalog" aria-labelledby="catalog-title">
+        <h2 id="catalog-title">5. Card Catalog and Artwork</h2>
+        <p>Scott’s TCG Binder uses a replaceable catalog-provider architecture. The current production catalog provider is <a href="https://tcgdex.net" rel="noopener noreferrer" target="_blank">TCGdex</a>.</p>
+        <p>When catalog information is downloaded, the application requests public catalog resources such as series, sets, cards, languages, taxonomy, and official artwork. Those requests are ordinary HTTPS requests. They can include a product user-agent and may expose technical information that any internet request exposes, such as IP address and standard HTTP request information. They do not include your collection ownership, notes, or scan photographs.</p>
+        <p>Official catalog artwork is downloaded from the provider’s asset host and cached locally, typically as card image files such as <code>large.webp</code> and <code>small.webp</code>. Those images are provider artwork. They are not photographs you took.</p>
+        <p>You can clear the catalog image cache in Settings. Clearing that cache does not delete your collection photographs or scan images. Cached official artwork may also be removed automatically if the cache grows too large.</p>
+        <p>A Mac can also send a local catalog snapshot to a trusted iPhone or iPad over your local network. That snapshot is catalog reference data, not your personal collection.</p>
+      </section>
+
+      <section id="pricing" aria-labelledby="pricing-title">
+        <h2 id="pricing-title">6. Pricing Information</h2>
+        <p>Pricing uses a replaceable provider architecture. The current production pricing source is the configured catalog provider, presently TCGdex. Pricing requests ask for public card pricing associated with a catalog card identifier, name, set, collector number, language, and variant information. They do not send your quantity, notes, storage location, or other private collection fields.</p>
+        <p>Returned quotes can be stored locally as price snapshots and used for on-device collection valuation. Those snapshots stay on the device. They are not synchronized through CloudKit or local-network collection sync.</p>
+        <p>Settings can store optional eBay or PriceCharting credentials in the device Keychain. The current application does not send your collection or live pricing requests to eBay or PriceCharting. The application can build an eBay search link from public catalog information such as card name, set name, and collector number. Opening that link is a user action in the system browser.</p>
+        <p>If a later release enables additional pricing providers, this policy will be updated before that behavior ships.</p>
+      </section>
+
+      <section id="icloud" aria-labelledby="icloud-title">
+        <h2 id="icloud-title">7. iCloud and CloudKit Synchronization</h2>
+        <p>iCloud synchronization is optional. If you enable it, selected personal collection information is synchronized using Apple’s CloudKit service in the private CloudKit database associated with your Apple Account.</p>
+        <p>The application developer does not receive your Apple Account password. CloudKit storage and access are also governed by Apple’s privacy and iCloud policies:</p>
+        <ul>
+          <li><a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/icloud/" rel="noopener noreferrer" target="_blank">Apple iCloud Terms</a></li>
+        </ul>
+        <p>When enabled, CloudKit can synchronize personal collection state such as owned cards, quantities, favorite and trade flags, grades, notes, locations, wishlist items, tracked-set goals, activity, saved decks, and related user-created collection metadata. Personal collection photographs are not uploaded by default. If you enable personal-image synchronization, those photographs can be stored as CloudKit assets in your private database.</p>
+        <p>Public catalog tables, official artwork caches, pricing snapshots, scan history, OCR results, recognition indexes, and competitive tournament caches are not CloudKit members.</p>
+        <p>This policy does not claim end-to-end encryption for CloudKit data. Apple provides the CloudKit service and its protections.</p>
+        <p>You can keep the collection on the device only, pause or disable CloudKit, or delete CloudKit collection data from Settings. Deleting the application without deleting iCloud data may leave synchronized collection information in your iCloud account until you remove it through the application or Apple’s iCloud controls.</p>
+      </section>
+
+      <section id="local-network" aria-labelledby="local-network-title">
+        <h2 id="local-network-title">8. Local Network Device Synchronization</h2>
+        <p>Scott’s TCG Binder can discover nearby copies of the application using Bonjour on your local network. Local-network access is requested so your Mac, iPhone, and iPad can find one another and communicate directly. No Scott’s TCG Binder server sits in the middle of that connection.</p>
+        <p>The first connection asks you to allow the nearby device. After you trust a device, later connections can use that trust until you change it.</p>
+        <p>Local-network communication uses Apple’s Multipeer Connectivity with encryption required by the session. This is transport encryption provided by Apple’s framework, not a separate Scott’s TCG Binder cryptographic product.</p>
+        <h3>Catalog synchronization</h3>
+        <p>Catalog sync copies a public Pokémon catalog snapshot from a Mac to a nearby iPhone or iPad. It does not copy your owned cards, notes, wishlist, decks, or personal photographs.</p>
+        <h3>Collection synchronization</h3>
+        <p>Collection sync copies personal collection information between trusted devices, including owned cards, locations, flags, wishlist items, tracked sets, activity, saved decks, user-created cards, and collection photographs. Scan history and OCR results are not part of this transfer.</p>
+        <h3>Remote camera</h3>
+        <p>A trusted iPhone can send live camera preview frames and still photographs to a Mac over the same local-network session so the Mac can scan cards.</p>
+        <p>Temporary transfer files are removed after a session. Information that was applied to the receiving device remains there as local application data.</p>
+      </section>
+
+      <section id="backups" aria-labelledby="backups-title">
+        <h2 id="backups-title">9. Backups and Restore</h2>
+        <p>You can create a personal backup from the application. A backup can include the collection database and, if you choose, personal images such as collection photographs, scan images, condition images, and user-created card images. Official catalog artwork caches are not included.</p>
+        <p>On Mac, you choose the destination folder. On iPhone and iPad, the backup is prepared locally and you can share it through the system share sheet to a location you control.</p>
+        <p>Backups are not encrypted by Scott’s TCG Binder. They use checksums to verify that files copied completely. After a backup leaves the application, you are responsible for where it is stored, who can open it, and when it is deleted.</p>
+        <p>A backup can contain collection information, notes, decks, scan history, and images if those records existed on the device and you included images. Optional provider credentials are not intended to be stored in backups.</p>
+        <p>Restoring a backup replaces the local collection database with the backup you select. Existing backup files are not deleted when you later purge personal data inside the application.</p>
+      </section>
+
+      <section id="third-parties" aria-labelledby="third-parties-title">
+        <h2 id="third-parties-title">10. Third-Party Services</h2>
+        <p>Scott’s TCG Binder may contact independent services when you use catalog, artwork, pricing, competitive-deck, or Apple cloud features. Those services have their own privacy policies.</p>
+        <h3>Current catalog and artwork provider</h3>
+        <p>The current catalog provider is TCGdex. The application requests catalog metadata and official artwork from TCGdex systems such as <code>api.tcgdex.net</code> and <code>assets.tcgdex.net</code>.</p>
+        <ul>
+          <li><a href="https://tcgdex.net" rel="noopener noreferrer" target="_blank">TCGdex</a></li>
+          <li><a href="https://tcgdex.dev" rel="noopener noreferrer" target="_blank">TCGdex API documentation</a></li>
+          <li><a href="https://tcgdex.net/terms-and-conditions" rel="noopener noreferrer" target="_blank">TCGdex Terms and Conditions</a></li>
+        </ul>
+        <p>The catalog provider can be replaced in a later release. If that happens, this policy will be updated to name the new provider.</p>
+        <h3>Competitive tournament data</h3>
+        <p>If you refresh competitive deck information, the application can request public tournament and standings data from Limitless TCG. Those requests include game and format information. They do not include your collection.</p>
+        <ul>
+          <li><a href="https://play.limitlesstcg.com/privacy" rel="noopener noreferrer" target="_blank">Limitless TCG Privacy Policy</a></li>
+        </ul>
+        <h3>Apple services</h3>
+        <p>Optional iCloud synchronization uses Apple CloudKit. Operating-system components such as Vision, Multipeer Connectivity, and Apple crash reporting are provided by Apple on the device or through Apple’s platforms.</p>
+        <ul>
+          <li><a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></li>
+        </ul>
+        <p>When the application contacts a third-party service, that service can receive the technical information that normally accompanies an internet request, such as IP address and HTTP headers. Scott’s TCG Binder does not send your private collection notes or ownership records to catalog, artwork, pricing, or competitive-data providers as part of those requests.</p>
+      </section>
+
+      <section id="analytics" aria-labelledby="analytics-title">
+        <h2 id="analytics-title">11. Analytics, Advertising, and Tracking</h2>
+        <p>We do not use third-party advertising or behavioral analytics SDKs.</p>
+        <p>Scott’s TCG Binder does not display advertising. It does not sell personal information. It does not use advertising identifiers for cross-app or cross-website behavioral tracking. It does not include App Tracking Transparency tracking for advertising.</p>
+        <p>The application includes on-device collection summaries and charts. Those screens use your local collection data so you can see your own inventory and value. They are not advertising analytics and are not sent to an analytics company.</p>
+      </section>
+
+      <section id="diagnostics" aria-labelledby="diagnostics-title">
+        <h2 id="diagnostics-title">12. Diagnostics and Crash Information</h2>
+        <p>The application writes diagnostic messages locally using the operating system’s logging facilities. Those logs stay on the device unless you export them or unless the operating system includes them in a report you choose to send.</p>
+        <p>Scott’s TCG Binder does not include a third-party crash-reporting SDK such as Firebase Crashlytics or Sentry.</p>
+        <p>If you install the application from the App Store or TestFlight, Apple may collect crash and diagnostic information according to your device settings and Apple’s policies. The application developer receives Apple crash reports only if Apple makes them available through App Store Connect and you have not disabled sharing. This policy does not claim that the developer automatically receives Apple diagnostic data.</p>
+      </section>
+
+      <section id="retention" aria-labelledby="retention-title">
+        <h2 id="retention-title">13. Data Retention</h2>
+        <p>Because Scott’s TCG Binder is local-first, retention is controlled mainly by your devices and by the features you use:</p>
+        <ul>
+          <li>Local collection data remains until you remove it, purge personal data, delete the application, or restore a different backup.</li>
+          <li>Cached catalog artwork remains until you clear the image cache, the application evicts old artwork, or the application data is removed.</li>
+          <li>Scan images remain according to your scan-image retention setting and whether you later delete scan history or purge personal data.</li>
+          <li>CloudKit data remains according to the application’s deletion behavior and Apple’s CloudKit and iCloud systems.</li>
+          <li>Local-network copies remain on each device that received them until removed on that device.</li>
+          <li>Backup files remain wherever you chose to store them.</li>
+          <li>License acceptance and similar acknowledgements remain in device-local settings until the application data is removed or a later agreement requires a new acknowledgement.</li>
+        </ul>
+        <p>The developer does not operate a separate Scott’s TCG Binder account database of your collection.</p>
+      </section>
+
+      <section id="deletion" aria-labelledby="deletion-title">
+        <h2 id="deletion-title">14. Your Data and Deletion</h2>
+        <p>You can remove information inside the application. There is not a single button labeled “Delete All My Data.” The available controls are:</p>
+        <ul>
+          <li><strong>Individual collection cards:</strong> edit or delete owned cards in Collection.</li>
+          <li><strong>Wishlist and tracked sets:</strong> remove items in Wishlist and Tracked Sets.</li>
+          <li><strong>Decks:</strong> delete saved decks in Decks.</li>
+          <li><strong>Scan history and scan images:</strong> manage scans in Scan History and choose a scan-image retention setting in Settings.</li>
+          <li><strong>Cached official artwork:</strong> use Clear Image Cache in Settings.</li>
+          <li><strong>Personal collection bulk removal:</strong> Settings → Advanced → Personal Data → Purge My Collection. This removes ownership and related personal data from the device and can optionally include wishlist, tracked sets, saved decks, and scan history. It preserves the downloaded public catalog. You can apply the purge to this device only, or to this device and iCloud.</li>
+          <li><strong>iCloud copy:</strong> disable CloudKit, delete CloudKit collection data in Cloud Sync settings, or include iCloud in a personal-data purge.</li>
+          <li><strong>Local-network copies:</strong> after a purge, local collection sync is paused until you resume it. Delete or purge data on each device that still holds a copy.</li>
+          <li><strong>Backups:</strong> delete backup folders or shared files in the location where you stored them. The application does not delete those files for you.</li>
+          <li><strong>Entire local application data:</strong> delete the application, or remove the application’s data using the operating system.</li>
+        </ul>
+        <p>Purging personal collection data does not delete existing backup archives, official catalog metadata, or cached official artwork unless you clear or delete those separately.</p>
+      </section>
+
+      <section id="security" aria-labelledby="security-title">
+        <h2 id="security-title">15. Data Security</h2>
+        <p>Scott’s TCG Binder uses the protections provided by Apple platforms, including application sandboxing on iOS, iPadOS, and the sandboxed Mac application. The local SQLite database and images live inside the application’s container.</p>
+        <p>External catalog, artwork, pricing, and competitive-data requests use HTTPS.</p>
+        <p>Optional CloudKit synchronization uses Apple’s CloudKit service and the user’s Apple Account.</p>
+        <p>Local-network synchronization requires user approval of the nearby device and uses Multipeer Connectivity with encryption required. Trusted-device names are stored locally so you do not have to approve the same device every time.</p>
+        <p>No method of storage or transmission is perfectly secure. If you export or back up collection information, protect those files as you would any other personal document.</p>
+      </section>
+
+      <section id="children" aria-labelledby="children-title">
+        <h2 id="children-title">16. Children’s Privacy</h2>
+        <p>Scott’s TCG Binder is a trading-card collection utility. It does not include social networking, public profiles, advertising, or behavioral tracking. It does not ask for a child’s name, email address, or similar contact information in order to use the collection features.</p>
+        <p>A parent or guardian can use the same on-device deletion, backup, and permission controls described in this policy. Camera, photo-library, local-network, and iCloud access are controlled by the operating system’s permission prompts.</p>
+        <p>App Store age rating is configured separately in App Store Connect. This policy describes the application’s data practices rather than a legal age gate.</p>
+      </section>
+
+      <section id="international" aria-labelledby="international-title">
+        <h2 id="international-title">17. International Users</h2>
+        <p>Scott’s TCG Binder is a local-first application. The developer does not operate a centralized Scott’s TCG Binder service that stores your collection. Information that leaves the device does so through Apple services you enable, local-network connections you approve, backups or exports you create, or third-party catalog, artwork, pricing, and competitive-data requests described above.</p>
+        <p>If those third-party or Apple services process information in other countries, their policies apply to that processing. You can use the deletion and permission controls in this policy regardless of where you use the application.</p>
+      </section>
+
+      <section id="changes" aria-labelledby="changes-title">
+        <h2 id="changes-title">18. Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy will be updated when the application’s data practices change, including new network services, analytics, accounts, cloud synchronization, or personal-data handling. The Last Updated date at the top of this page will change when the policy changes.</p>
+        <p>This Privacy Policy is published at <a href="https://phpscott.github.io/ScottsTCGBinderLicenses/privacy/">https://phpscott.github.io/ScottsTCGBinderLicenses/privacy/</a>.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">19. Contact Us</h2>
+        <p>Privacy questions about Scott’s TCG Binder can be sent through the support page for this application:</p>
+        <p><a href="https://phpscott.github.io/ScottsTCGBinderLicenses/support/">https://phpscott.github.io/ScottsTCGBinderLicenses/support/</a></p>
+        <p>You may also use the support contact listed with Scott’s TCG Binder on the App Store.</p>
+      </section>
+
+      <section id="trademarks" aria-labelledby="trademarks-title">
+        <h2 id="trademarks-title">20. Pokémon and Third-Party Trademarks</h2>
+        <p>Pokémon and related names and images are trademarks of their respective owners. Scott’s TCG Binder is an independent application and is not affiliated with, endorsed, sponsored, or approved by The Pokémon Company, Nintendo, Game Freak, or Creatures.</p>
+        <p>TCGdex, Limitless TCG, eBay, PriceCharting, Apple, iCloud, CloudKit, and other product names are trademarks of their respective owners.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Scott’s TCG Binder Privacy Policy. Effective <time datetime="2026-09-20">September 20, 2026</time>.</p>
+      <p>This page does not use cookies, analytics, or external scripts.</p>
+    </footer>
+  </div>
+</body>
+</html>
