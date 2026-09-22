@@ -3,20 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark">
   <title>Scott’s TCG Binder</title>
   <style>
-    :root { color-scheme: light dark; --bg:#f6f4ef; --text:#1c1915; --muted:#5c564c; --card:#fffdf8; --border:#d9d2c5; --accent:#0b57d0; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg:#161412; --text:#f3eee6; --muted:#c2b8aa; --card:#221e1a; --border:#3a342c; --accent:#8ab4ff; }
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --text: #f3eee6;
+      --muted: #c2b8aa;
+      --card: #000;
+      --border: #2a2a2a;
+      --accent: #8ab4ff;
+      --page: 1024px;
+      --logo: 420px;
     }
-    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    .site-banner { width:100%; background:#071226; line-height:0; }
-    .site-banner img { display:block; width:100%; max-width:1100px; height:auto; margin:0 auto; }
-    main { max-width:720px; margin:0 auto; padding:2rem 1.25rem 3rem; }
-    section { background:var(--card); border:1px solid var(--border); border-radius:1rem; padding:1.4rem; }
-    a { color:var(--accent); }
-    ul { padding-left:1.2rem; }
+    html, body { background: #000; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #000;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .site-banner {
+      width: 100%;
+      max-width: var(--page);
+      margin: 0 auto;
+      background: #000;
+      line-height: 0;
+      padding: 1.25rem 1.25rem 0;
+      box-sizing: border-box;
+    }
+    .site-banner img {
+      display: block;
+      width: 100%;
+      max-width: var(--logo);
+      height: auto;
+      margin: 0 auto;
+    }
+    main {
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+      box-sizing: border-box;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.4rem;
+    }
+    a { color: var(--accent); }
+    ul { padding-left: 1.2rem; }
   </style>
 </head>
 <body>
