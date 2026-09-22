@@ -56,12 +56,20 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       gap: 0.35rem 1.25rem;
+    }
+    .site-nav li,
+    .site-nav li + li {
+      margin: 0;
+      padding: 0;
     }
     .site-nav a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
+      line-height: 1.2;
+      display: inline-block;
     }
     .site-nav a:hover,
     .site-nav a:focus-visible {
