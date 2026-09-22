@@ -19,7 +19,7 @@
       --card: #000;
       --border: #2a2a2a;
       --accent: #8ab4ff;
-      --page: 1024px;
+      --page: 800px;
       --logo: 420px;
     }
     html, body { background: #000; }
@@ -45,6 +45,36 @@
       max-width: var(--logo);
       height: auto;
       margin: 0 auto;
+    }
+    .site-nav {
+      width: 100%;
+      max-width: var(--page);
+      margin: 0 auto;
+      padding: 1rem 1.25rem 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem 1.25rem;
+    }
+    .site-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 0.14em;
+    }
+    .site-nav a[aria-current="page"] {
+      color: var(--text);
     }
     main {
       max-width: var(--page);
@@ -84,15 +114,20 @@
     a {
       color: var(--accent);
     }
-    nav {
-      margin-top: 1rem;
-    }
   </style>
 </head>
 <body>
   <div class="site-banner" role="banner">
     <img src="/ScottsTCGBinderLicenses/assets/mobile_header.png" alt="Scott’s TCG Binder" width="2172" height="724" decoding="async">
   </div>
+  <nav class="site-nav" aria-label="Site">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/ScottsTCGBinderLicenses/privacy/">Privacy</a></li>
+      <li><a href="/ScottsTCGBinderLicenses/support/">Support</a></li>
+      <li><a href="/ScottsTCGBinderLicenses/terms/" aria-current="page">Terms</a></li>
+    </ul>
+  </nav>
   <main>
     <header>
       <h1>Licensed Application End User License Agreement</h1>
@@ -102,13 +137,6 @@
         The official Apple publication is available at
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer" target="_blank">apple.com/legal/internet-services/itunes/dev/stdeula/</a>.
       </p>
-      <nav>
-        <a href="/">Home</a>
-        ·
-        <a href="/ScottsTCGBinderLicenses/privacy/">Privacy Policy</a>
-        ·
-        <a href="/ScottsTCGBinderLicenses/support/">Support</a>
-      </nav>
     </header>
 
     <article>
