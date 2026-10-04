@@ -1,6 +1,6 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
-    "name": "pokemon-tcg-trust",
+    "name": "scotts-tcg-trust",
     "compatibility_date": "2026-10-03",
     "assets": {
       "directory": "./dist"
