@@ -6,19 +6,20 @@ Public legal and support pages for **Scott’s TCG Binder** (also referred to as
 
 | Page | Path | URL |
 |------|------|-----|
-| Home | `index.html` | https://phpscott.github.io/ |
-| End User License Agreement | `ScottsTCGBinderLicenses/terms/index.html` | https://phpscott.github.io/ScottsTCGBinderLicenses/terms/ |
-| Privacy Policy | `ScottsTCGBinderLicenses/privacy/index.html` | https://phpscott.github.io/ScottsTCGBinderLicenses/privacy/ |
-| Support | `ScottsTCGBinderLicenses/support/index.html` | https://phpscott.github.io/ScottsTCGBinderLicenses/support/ |
+| Home | `dist/index.html` | https://phpscott.github.io/ |
+| End User License Agreement | `dist/terms/index.html` | https://phpscott.github.io/terms/ |
+| Privacy Policy | `dist/privacy/index.html` | https://phpscott.github.io/privacy/ |
+| Support | `dist/support/index.html` | https://phpscott.github.io/support/ |
 
 ## Repository layout
 
 ```text
 phpscott.github.io/
-├── index.html                          # Site home / page index
 ├── README.md
 ├── .gitignore
-└── ScottsTCGBinderLicenses/
+├── wrangler.jsonc
+└── dist/
+    ├── index.html                      # Site home / page index
     ├── assets/
     │   ├── mobile_header.png           # Banner used on every HTML page
     │   └── scottstcgbinder.png         # Brand artwork
@@ -34,11 +35,11 @@ phpscott.github.io/
 
 | File | Use |
 |------|-----|
-| `ScottsTCGBinderLicenses/assets/mobile_header.png` | Top banner on every HTML page |
-| `ScottsTCGBinderLicenses/assets/scottstcgbinder.png` | Brand artwork |
+| `dist/assets/mobile_header.png` | Top banner on every HTML page |
+| `dist/assets/scottstcgbinder.png` | Brand artwork |
 
 ## Notes
 
-- License HTML lives under `ScottsTCGBinderLicenses/`.
+- Published HTML lives under `dist/`.
 - The terms page reproduces Apple’s Standard Licensed Application End User License Agreement. Official Apple source: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-- Enter `https://phpscott.github.io/ScottsTCGBinderLicenses/privacy/` as the App Store Connect Privacy Policy URL.
+- Enter `https://phpscott.github.io/privacy/` as the App Store Connect Privacy Policy URL.
