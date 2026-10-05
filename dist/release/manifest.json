@@ -1,37 +1,55 @@
 {
-  "manifestVersion": 1,
-  "generatedAt": "2026-10-04T14:30:52Z",
-  "environment": "production",
-  "application": {
-    "name": "Scott's TCG Binder",
-    "website": "https://www.scottstcgbinder.com"
+  "application" : {
+    "name" : "Scott's TCG Binder",
+    "website" : "https://www.scottstcgbinder.com"
   },
-  "links": {
-    "privacy": "https://trust.scottstcgbinder.com/privacy/",
-    "support": "https://trust.scottstcgbinder.com/support/",
-    "terms": "https://trust.scottstcgbinder.com/terms/"
+  "cache" : {
+    "recommendedCheckIntervalSeconds" : 86400,
+    "staleIfOffline" : true
   },
-  "service": {
-    "status": "active"
+  "catalog" : {
+    "compatibility" : {
+      "maximumApplicationVersion" : null,
+      "minimumApplicationVersion" : "1.0.0"
+    },
+    "compression" : "zip",
+    "contentType" : "application/zip",
+    "createdAt" : "2026-10-04T01:20:45.519Z",
+    "downloadUrl" : "https://catalog.scottstcgbinder.com/production/v1/r000001/catalog-v1-r000001.zip",
+    "publishedAt" : "2026-10-04T14:18:09Z",
+    "release" : "r000001",
+    "releaseUrl" : "https://catalog.scottstcgbinder.com/production/v1/r000001",
+    "schemaVersion" : 1,
+    "sha256" : "762b20dcfb8598afdd9c72566286f6c71f41b59cc03465db421397e5761c3663",
+    "sizeBytes" : 5095906
   },
-  "catalog": {
-    "schemaVersion": 1,
-    "release": "r000001",
-    "createdAt": "2026-10-04T01:20:45.519Z",
-    "publishedAt": "2026-10-04T14:18:09Z",
-    "downloadUrl": "https://catalog.scottstcgbinder.com/production/v1/r000001/catalog-v1-r000001.zip",
-    "releaseUrl": "https://catalog.scottstcgbinder.com/production/v1/r000001",
-    "sizeBytes": 5095906,
-    "sha256": "762b20dcfb8598afdd9c72566286f6c71f41b59cc03465db421397e5761c3663",
-    "contentType": "application/zip",
-    "compression": "zip",
-    "compatibility": {
-      "minimumApplicationVersion": "1.0.0",
-      "maximumApplicationVersion": null
+  "catalogReleases" : [
+    {
+      "compatibility" : {
+        "maximumApplicationVersion" : null,
+        "minimumApplicationVersion" : "1.0.0"
+      },
+      "compression" : "zip",
+      "contentType" : "application/zip",
+      "createdAt" : "2026-10-04T01:20:45.519Z",
+      "downloadUrl" : "https://catalog.scottstcgbinder.com/production/v1/r000001/catalog-v1-r000001.zip",
+      "publishedAt" : "2026-10-04T14:18:09Z",
+      "release" : "r000001",
+      "releaseUrl" : "https://catalog.scottstcgbinder.com/production/v1/r000001",
+      "schemaVersion" : 1,
+      "sha256" : "762b20dcfb8598afdd9c72566286f6c71f41b59cc03465db421397e5761c3663",
+      "sizeBytes" : 5095906
     }
+  ],
+  "environment" : "production",
+  "generatedAt" : "2026-10-05T12:59:22.094Z",
+  "links" : {
+    "privacy" : "https://trust.scottstcgbinder.com/privacy/",
+    "support" : "https://trust.scottstcgbinder.com/support/",
+    "terms" : "https://trust.scottstcgbinder.com/terms/"
   },
-  "cache": {
-    "recommendedCheckIntervalSeconds": 86400,
-    "staleIfOffline": true
+  "manifestVersion" : 1,
+  "service" : {
+    "status" : "active"
   }
 }
