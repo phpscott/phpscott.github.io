@@ -1,4 +1,4 @@
-# phpscott.github.io
+# scottstcgbinder.com
 
 Public legal and support pages for **Scott’s TCG Binder** (also referred to as Bindovo).
 
@@ -6,15 +6,15 @@ Public legal and support pages for **Scott’s TCG Binder** (also referred to as
 
 | Page | Path | URL |
 |------|------|-----|
-| Home | `dist/index.html` | https://phpscott.github.io/ |
-| End User License Agreement | `dist/terms/index.html` | https://phpscott.github.io/terms/ |
-| Privacy Policy | `dist/privacy/index.html` | https://phpscott.github.io/privacy/ |
-| Support | `dist/support/index.html` | https://phpscott.github.io/support/ |
+| Home | `dist/index.html` | https://scottstcgbinder.com/ |
+| End User License Agreement | `dist/terms/index.html` | https://scottstcgbinder.com/terms/ |
+| Privacy Policy | `dist/privacy/index.html` | https://scottstcgbinder.com/privacy/ |
+| Support | `dist/support/index.html` | https://scottstcgbinder.com/support/ |
 
 ## Repository layout
 
 ```text
-phpscott.github.io/
+scotts-tcg-trust/
 ├── README.md
 ├── .gitignore
 ├── wrangler.jsonc
@@ -42,4 +42,4 @@ phpscott.github.io/
 
 - Published HTML lives under `dist/`.
 - The terms page reproduces Apple’s Standard Licensed Application End User License Agreement. Official Apple source: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-- Enter `https://phpscott.github.io/privacy/` as the App Store Connect Privacy Policy URL.
+- Enter `https://scottstcgbinder.com/privacy/` as the App Store Connect Privacy Policy URL.
