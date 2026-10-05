@@ -1,4 +1,4 @@
-# scottstcgbinder.com
+# trust.scottstcgbinder.com
 
 Public legal and support pages for **Scott’s TCG Binder** (also referred to as Bindovo).
 
@@ -6,10 +6,10 @@ Public legal and support pages for **Scott’s TCG Binder** (also referred to as
 
 | Page | Path | URL |
 |------|------|-----|
-| Home | `dist/index.html` | https://scottstcgbinder.com/ |
-| End User License Agreement | `dist/terms/index.html` | https://scottstcgbinder.com/terms/ |
-| Privacy Policy | `dist/privacy/index.html` | https://scottstcgbinder.com/privacy/ |
-| Support | `dist/support/index.html` | https://scottstcgbinder.com/support/ |
+| Home | `dist/index.html` | https://trust.scottstcgbinder.com/ |
+| End User License Agreement | `dist/terms/index.html` | https://trust.scottstcgbinder.com/terms/ |
+| Privacy Policy | `dist/privacy/index.html` | https://trust.scottstcgbinder.com/privacy/ |
+| Support | `dist/support/index.html` | https://trust.scottstcgbinder.com/support/ |
 
 ## Repository layout
 
@@ -42,4 +42,4 @@ scotts-tcg-trust/
 
 - Published HTML lives under `dist/`.
 - The terms page reproduces Apple’s Standard Licensed Application End User License Agreement. Official Apple source: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-- Enter `https://scottstcgbinder.com/privacy/` as the App Store Connect Privacy Policy URL.
+- Enter `https://trust.scottstcgbinder.com/privacy/` as the App Store Connect Privacy Policy URL.
